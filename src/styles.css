@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: Sen-Bold;
+  src: url(assets/fonts/Sen-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Sen-ExtraBold;
+  src: url(assets/fonts/Sen-ExtraBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: Sen-Regular;
+  src: url(assets/fonts/Sen-Regular.otf) format("opentype");
+}
+
+* {
+  font-family: 'Sen-Regular', sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}

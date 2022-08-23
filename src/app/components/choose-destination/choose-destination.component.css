@@ -1,0 +1,86 @@
+.main-container {
+  background-color: #F5F6FA;
+  padding: 3rem 2rem;
+  height: 89vh;
+}
+
+.heading {
+  font-family: 'Sen-Bold', sans-serif;
+  background-color: #F5F6FA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.label {
+  font-family: 'Sen-Bold', sans-serif;
+}
+
+.destination-card {
+  background-color: white;
+  box-shadow: 0px 10px 20px #DCEFF5;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  padding: 1.5rem;
+  font-size: 14px;
+  font-family: 'Sen-Regular', sans-serif;
+  padding-left: 2rem
+}
+
+.label {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destination-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dots {
+  position: absolute;
+}
+
+.description {
+  color: #F59523;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-destination {
+  display: flex;
+  margin-bottom: 3rem
+}
+
+.marg-right {
+  margin-right: 1rem;
+}
+
+.btn {
+  background-color: #F59523;
+  color: white;
+  font-family: 'Sen-Bold', sans-serif;
+  border-radius: 45px;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  bottom: 1rem;
+  height: 56px;
+  border: none;
+}
+
+input {
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}

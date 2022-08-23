@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: "AIzaSyD7HOx8zsQs_PDBr-f0YRXF_9bD-OaHdoI",
+  ngrokUrl: 'https://affd-154-160-21-12.ngrok.io'
 };
 
 /*

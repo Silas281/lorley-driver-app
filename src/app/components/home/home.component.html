@@ -1,0 +1,88 @@
+<div class="googleMap" #map></div>
+<div class="center-btn" (click)="centerMap()">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="215" height="214"
+    viewBox="0 0 215 214">
+    <defs>
+      <filter id="Rectangle_10" x="0" y="0" width="215" height="214" filterUnits="userSpaceOnUse">
+        <feOffset dy="20" input="SourceAlpha" />
+        <feGaussianBlur stdDeviation="25" result="blur" />
+        <feFlood flood-color="#f59523" flood-opacity="0.302" />
+        <feComposite operator="in" in2="blur" />
+        <feComposite in="SourceGraphic" />
+      </filter>
+    </defs>
+    <g id="Group_29" data-name="Group 29" transform="translate(-239 -624)">
+      <g transform="matrix(1, 0, 0, 1, 239, 624)" filter="url(#Rectangle_10)">
+        <rect id="Rectangle_10-2" data-name="Rectangle 10" width="65" height="64" rx="32" transform="translate(75 55)"
+          fill="#f59523" />
+      </g>
+      <path id="Icon_material-my-location" data-name="Icon material-my-location"
+        d="M12.5,8.5a4,4,0,1,0,4,4A4,4,0,0,0,12.5,8.5Zm8.94,3A8.994,8.994,0,0,0,13.5,3.56V1.5h-2V3.56A8.994,8.994,0,0,0,3.56,11.5H1.5v2H3.56a8.994,8.994,0,0,0,7.94,7.94V23.5h2V21.44a8.994,8.994,0,0,0,7.94-7.94H23.5v-2Zm-8.94,8a7,7,0,1,1,7-7A6.995,6.995,0,0,1,12.5,19.5Z"
+        transform="translate(334.5 698.5)" fill="#fff" />
+    </g>
+  </svg>
+</div>
+<div class="bottom-tab">
+  <div (click)="chooseDestination()" class="input">
+    <div class="dot">
+      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+        <circle id="Ellipse_18" data-name="Ellipse 18" cx="4.5" cy="4.5" r="4.5" fill="#f59523" />
+      </svg>
+    </div>
+    <input class="boderless" placeholder="Where to?" type="text">
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21.811" height="21.811" viewBox="0 0 21.811 21.811">
+        <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(-3.75 -3.75)">
+          <path id="Path_189" data-name="Path 189" d="M29.808,29.808l-4.833-4.833" transform="translate(-5.308 -5.308)"
+            fill="none" stroke="#f59523" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+          <path id="Path_190" data-name="Path 190"
+            d="M22.278,13.389A8.889,8.889,0,1,1,13.389,4.5,8.889,8.889,0,0,1,22.278,13.389Z" fill="none" stroke="#000"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="card-row">
+    <!-- Probably make this into a component -->
+    <div class="position-card card-row pad left">
+      <div class="card-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22">
+          <g id="Icon_feather-home" data-name="Icon feather-home" transform="translate(1 1)">
+            <path id="Path_74" data-name="Path 74" d="M13.5,28V18h6V28" transform="translate(-7.5 -8)" fill="none"
+              stroke="#f59523" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            <path id="Path_183" data-name="Path 183" d="M4.5,10l9-7,9,7V21a2,2,0,0,1-2,2H6.5a2,2,0,0,1-2-2Z"
+              transform="translate(-4.5 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" />
+          </g>
+        </svg>
+        <div class="location">
+          <span class="location-text">Home</span>
+          <br>
+          <span class="description-text">52, Desai Village</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-card card-row pad">
+      <div class="card-content">
+        <svg xmlns="http://www.w3.org/2000/svg" width="21.533" height="20" viewBox="0 0 21.533 20">
+          <g id="Group_33" data-name="Group 33" transform="translate(-512.636 -107.568)">
+            <path id="Path_184" data-name="Path 184"
+              d="M523.406,127.568h-8.419a2.286,2.286,0,0,1-2.35-2.347q0-6.128,0-12.256a2.286,2.286,0,0,1,2.328-2.32c1.431,0,2.862-.006,4.293,0,.237,0,.3-.074.292-.3a2.73,2.73,0,0,1,.254-1.539,2.244,2.244,0,0,1,2.024-1.233c1.055-.011,2.111-.006,3.166,0a2.291,2.291,0,0,1,2.263,2.265c0,.184.012.369,0,.551-.016.2.067.258.262.257,1.455-.006,2.91,0,4.365,0a2.3,2.3,0,0,1,2.284,2.269q0,6.2,0,12.4a2.284,2.284,0,0,1-2.27,2.258Q527.651,127.572,523.406,127.568Zm0-1.57q4.15,0,8.3,0a.787.787,0,0,0,.894-.882q0-4.21,0-8.421c0-.278-.008-.283-.266-.2q-1.445.48-2.889.964a2.465,2.465,0,0,1-.8.129q-5.17,0-10.34,0a2.545,2.545,0,0,1-.8-.123q-1.5-.491-3.01-.978c-.284-.092-.285-.092-.285.207q0,4.174,0,8.349c0,.682.278.955.967.955Zm0-13.785h-8.275c-.633,0-.92.291-.922.928,0,.44.011.88,0,1.319a.312.312,0,0,0,.259.358c1.132.369,2.261.748,3.389,1.128a1.666,1.666,0,0,0,.54.089h10.025a1.316,1.316,0,0,0,.426-.051q1.773-.594,3.548-1.182a.261.261,0,0,0,.212-.293c-.009-.44,0-.879,0-1.319,0-.7-.27-.976-.969-.976Zm-.017-1.569q1.03,0,2.061,0c.108,0,.241.028.24-.148a5.666,5.666,0,0,0-.013-.67.725.725,0,0,0-.744-.676q-1.521-.02-3.043,0a.753.753,0,0,0-.769.785c-.007.151.009.3,0,.455-.017.2.062.262.259.26C522.043,110.637,522.714,110.643,523.385,110.643Z" />
+            <path id="Path_185" data-name="Path 185"
+              d="M675.755,349.2c-.751,0-1.5,0-2.252,0a.785.785,0,1,1,0-1.568q2.264,0,4.528,0a.784.784,0,1,1,0,1.567C677.272,349.2,676.513,349.2,675.755,349.2Z"
+              transform="translate(-152.35 -228.544)" fill="#f59523" />
+          </g>
+        </svg>
+        <div class="location">
+          <span class="location-text">Work</span>
+          <br>
+          <span class="description-text">Sector 125, Noida</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
