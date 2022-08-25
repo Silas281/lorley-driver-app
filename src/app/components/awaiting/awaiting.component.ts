@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./awaiting.component.css']
 })
 export class AwaitingComponent implements OnInit {
-
+  confirm:Boolean=false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  isConfirm(){
+    this.confirm=!this.confirm
+    //alert(this.confirm)
+  }
 }
