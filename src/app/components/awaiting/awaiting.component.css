@@ -109,6 +109,7 @@ Available Drivers
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid #9ed2e2;
+  padding-bottom: 5px;
 
 }
 
@@ -164,4 +165,5 @@ small{
 }
 .select button{
   border: none;
+  border-radius: 5px;
 }
