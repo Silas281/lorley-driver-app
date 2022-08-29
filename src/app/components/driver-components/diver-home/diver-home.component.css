@@ -1,0 +1,187 @@
+.main-container {
+  background-color: #F5F6FA;
+  padding: 3rem 2rem;
+  height: 89vh;
+}
+
+.heading {
+  font-family: 'Sen-Bold', sans-serif;
+  background-color: #F5F6FA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3rem;
+
+}
+
+.label {
+  font-family: 'Sen-Bold', sans-serif;
+}
+
+.destination-card {
+  background-color: white;
+  box-shadow: 0px 10px 20px #DCEFF5;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  padding: 1.5rem;
+  font-size: 14px;
+  font-family: 'Sen-Regular', sans-serif;
+  padding-left: 2rem
+}
+
+.label {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destination-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dots {
+  position: absolute;
+}
+
+.description {
+  color: #F59523;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-destination {
+  display: flex;
+  margin-bottom: 3rem
+}
+
+.marg-right {
+  margin-right: 1rem;
+}
+
+.btn {
+  background-color: #F59523;
+  color: white;
+  font-family: 'Sen-Bold', sans-serif;
+  border-radius: 45px;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  height: 56px;
+  border: none;
+}
+
+/* input {
+  border: none;
+  background-color: inherit;
+  width: 100%;
+} */
+
+input{
+  border: none;
+  background: rgba(247, 247, 247, 1);
+  border-radius: 5px;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+/*
+Available Drivers
+*/
+
+
+.driver-card{
+  background-color: white;
+  box-shadow: 0px 10px 20px #DCEFF5;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 1.5rem;
+  font-size: 14px;
+  font-family: 'Sen-Regular', sans-serif;
+  padding-left: 2rem;
+
+}
+
+.driver-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #9ed2e2;
+  padding-bottom: 5px;
+
+}
+
+.driver-details img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.5px solid #000;
+  margin-right: 10px;
+}
+
+
+.drive-location-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.drive-location-details p{
+  margin-top: 0px;
+
+  display: flex;
+  align-items: center;
+}
+.arrival-time .time-icon,.location{
+  margin-right: 10px;
+}
+
+.car-details1{
+  display: flex;
+}
+
+.car-details,.request-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-image{
+
+  align-self: center;
+  justify-self: flex-start;
+}
+.call{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+small{
+  margin-left: 5px;
+}
+
+.select{
+  display: flex;
+  justify-content: space-between;
+}
+.select .btn-select{
+  border: none;
+  border-radius: 5px;
+  display: flex;
+
+}
+
+.btn-text{
+  margin-right: 5px;
+}
+
+.from,.to{
+  color: #F59523;
+}
