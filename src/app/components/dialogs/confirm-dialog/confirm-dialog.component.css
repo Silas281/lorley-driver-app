@@ -1,0 +1,25 @@
+/* .dialog{
+  position: absolute;
+  z-index: 3;
+} */
+
+.dialog-actions{
+  display: flex;
+  justify-content: space-between;
+}
+
+#no-btn{
+  color: #ffffff;
+  background: #F59523;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+#yes-btn{
+  color: #ffffff;
+  background: #F59523;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+}

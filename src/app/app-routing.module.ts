@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { OngoingRideComponent } from './components/ongoing-ride/ongoing-ride.component';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AwaitingComponent } from './components/awaiting/awaiting.component';
 import { ChooseDestinationComponent } from './components/choose-destination/choose-destination.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'choose-destination', component: ChooseDestinationComponent },
   { path: 'awaiting', component: AwaitingComponent },
-  {path: 'driver-home', component: DiverHomeComponent}
+  {path: 'driver-home', component: DiverHomeComponent},
+  {path: 'ongoing-ride',component: OngoingRideComponent}
 ];
 
 @NgModule({
