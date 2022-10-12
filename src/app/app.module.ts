@@ -14,6 +14,7 @@ import { DiverHomeComponent } from './components/driver-components/diver-home/di
 import { OngoingRideComponent } from './components/ongoing-ride/ongoing-ride.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConfirmDialogComponent } from './components/dialogs/confirm-dialog/confirm-dialog.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -23,7 +24,8 @@ import { ConfirmDialogComponent } from './components/dialogs/confirm-dialog/conf
     AwaitingComponent,
     DiverHomeComponent,
     OngoingRideComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

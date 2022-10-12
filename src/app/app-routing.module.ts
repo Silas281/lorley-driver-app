@@ -5,13 +5,15 @@ import { AwaitingComponent } from './components/awaiting/awaiting.component';
 import { ChooseDestinationComponent } from './components/choose-destination/choose-destination.component';
 import { HomeComponent } from './components/home/home.component';
 import { DiverHomeComponent } from './components/driver-components/diver-home/diver-home.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'choose-destination', component: ChooseDestinationComponent },
   { path: 'awaiting', component: AwaitingComponent },
   {path: 'driver-home', component: DiverHomeComponent},
-  {path: 'ongoing-ride',component: OngoingRideComponent}
+  {path: 'ongoing-ride',component: OngoingRideComponent},
+  {path: 'sign-up', component: SignUpComponent},
 ];
 
 @NgModule({
