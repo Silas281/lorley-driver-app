@@ -3,7 +3,7 @@
        
         <form  class="sign-up-form">
             App Logo Here
-            <h1 class="form-header-title"><span class="span-signup">Sign up</span> <span class="span-login">Login</span> </h1>
+            <h1 class="form-header-title"><span class="span-signup">Sign up</span> <span [routerLink]="['/login']" class="span-login">Login</span> </h1>
             <div class="form-group">
                 <label for="first-name">First Name</label> <br>
                 <input type="text" id="first-name" placeholder="first name">
@@ -19,6 +19,10 @@
             <div class="form-group">
                 <label for="phone-number">Phone Number</label> <br>
                 <input type="text" id="phone-number" placeholder="phone number">
+            </div>
+            <div class="form-group">
+                <label for="phone-number">password</label> <br>
+                <input type="password" id="password">
             </div>
             <div class="form-group">
                 <label for="address">Resident Address</label> <br>

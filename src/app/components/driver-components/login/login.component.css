@@ -14,9 +14,10 @@
     padding: 0 10px;
     width: 50%;
     /*border-radius: 50px;*/
+    cursor: pointer;
 }
 
-.form-header-title .span-signup{
+.form-header-title .span-login{
     background-color: #F59523;
     border-radius: 50px;
     color: #fff;
@@ -27,7 +28,8 @@
 }
 .form-header-title .span-login{
     /*background-color: antiquewhite;*/
-    text-align: end;
+    text-align: center;
+   
     
 }
 
