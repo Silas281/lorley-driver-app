@@ -60,7 +60,7 @@ body{
 
 
 .form-group{
-    margin: 15px 0;
+    margin: 25px 0;
     width: 100%;
 }
 
@@ -74,8 +74,8 @@ input{
     border: 1px solid #ffffff !important;
     background: #ffffff;
     padding-left: 5px;
+    
 }
-
 input[type=submit]{
     background: #F59523;
     color: #ffffff;
@@ -94,9 +94,4 @@ input:focus{
     color: #F59523;
 }
 
-.login-option{
-    text-align: end;
-}
-.login-option a{
-    color: #F59523;
-}
+

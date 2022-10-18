@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConfirmDialogComponent } from './components/dialogs/confirm-dialog/confirm-dialog.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { LoginComponent } from './components/driver-components/login/login.component';
+import { AccountComponent } from './components/driver-components/account/account.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -27,7 +30,8 @@ import { LoginComponent } from './components/driver-components/login/login.compo
     OngoingRideComponent,
     ConfirmDialogComponent,
     SignUpComponent,
-    LoginComponent
+    LoginComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,7 @@ import { LoginComponent } from './components/driver-components/login/login.compo
     BrowserAnimationsModule,
     MatSnackBarModule,
     MatDialogModule,
+    ReactiveFormsModule,
   ],
   providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue:{hasBackdrop: false}}],
   bootstrap: [AppComponent]

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css']
+  selector: 'app-account',
+  templateUrl: './account.component.html',
+  styleUrls: ['./account.component.css']
 })
-export class SignUpComponent implements OnInit {
+export class AccountComponent implements OnInit {
 
   constructor() { }
 

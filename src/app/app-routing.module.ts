@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DiverHomeComponent } from './components/driver-components/diver-home/diver-home.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { LoginComponent } from './components/driver-components/login/login.component';
+import { AccountComponent } from './components/driver-components/account/account.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'ongoing-ride',component: OngoingRideComponent},
   {path: 'sign-up', component: SignUpComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'account', component: AccountComponent},
 ];
 
 @NgModule({
