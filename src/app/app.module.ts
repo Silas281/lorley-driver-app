@@ -19,6 +19,8 @@ import { ConfirmDialogComponent } from './components/dialogs/confirm-dialog/conf
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { LoginComponent } from './components/driver-components/login/login.component';
 import { AccountComponent } from './components/driver-components/account/account.component';
+import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
+import { DriverMainComponent } from './components/driver-components/driver-main/driver-main.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -31,7 +33,9 @@ import { AccountComponent } from './components/driver-components/account/account
     ConfirmDialogComponent,
     SignUpComponent,
     LoginComponent,
-    AccountComponent
+    AccountComponent,
+    BottomNavComponent,
+    DriverMainComponent
   ],
   imports: [
     BrowserModule,

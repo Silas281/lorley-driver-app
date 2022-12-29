@@ -8,9 +8,10 @@ import { DiverHomeComponent } from './components/driver-components/diver-home/di
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { LoginComponent } from './components/driver-components/login/login.component';
 import { AccountComponent } from './components/driver-components/account/account.component';
+import { DriverMainComponent } from './components/driver-components/driver-main/driver-main.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: DriverMainComponent },
   { path: 'choose-destination', component: ChooseDestinationComponent },
   { path: 'awaiting', component: AwaitingComponent },
   {path: 'driver-home', component: DiverHomeComponent},
