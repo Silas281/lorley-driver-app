@@ -33,7 +33,7 @@ export class DiverHomeComponent implements OnInit {
     let dialogRef = this.dialog.open(ConfirmPriceComponent, dialogConfig);
     dialogRef.afterClosed().subscribe(result => {
       this.selectedOption = result;
-      this.router.navigate(['/ongoing-ride']);
+      //this.router.navigate(['/ongoing-ride']);
   });
 }
 }
