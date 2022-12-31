@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ConfirmPriceComponent } from '../../dialogs/confirm-price/confirm-price.component';
+
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-diver-home',
@@ -8,7 +12,11 @@ import { Component, OnInit } from '@angular/core';
 export class DiverHomeComponent implements OnInit {
 
   confirm:Boolean=false;
-  constructor() { }
+  selectedOption: any;
+  constructor(
+    private dialog: MatDialog,
+    private router: Router,
+    ) { }
 
   ngOnInit(): void {
   }
@@ -18,4 +26,14 @@ export class DiverHomeComponent implements OnInit {
     //alert(this.confirm)
   }
 
+  openConfirmPrice(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    let dialogRef = this.dialog.open(ConfirmPriceComponent, dialogConfig);
+    dialogRef.afterClosed().subscribe(result => {
+      this.selectedOption = result;
+      this.router.navigate(['/ongoing-ride']);
+  });
+}
 }

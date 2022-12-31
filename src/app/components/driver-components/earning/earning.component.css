@@ -1,0 +1,76 @@
+
+.main-wrapper{
+    height: 95%;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    width: 100%;
+    overflow: hidden;
+}
+.total-trips{
+    
+    padding: 10px 30px;
+    background: #F59523;
+}
+
+.total-earning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 10px 10px;
+}
+
+.owing{
+    padding: 10px 30px;
+    background: #F59523;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trips-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.earning-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.earning-text{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid #F59523;
+
+}
+.earning-title{
+    font-size: 30px;
+}
+
+.pay-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.pay-wrapper button{
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}

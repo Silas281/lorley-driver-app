@@ -1,6 +1,6 @@
 .googleMap {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 
 .center-btn {
@@ -81,12 +81,13 @@ input:focus {
 .ride-action{
   position: absolute;
   /*width: 80%;*/
-  bottom: 10px;
+  bottom: 130px;
   right: 80px;
   left:80px;
   height: 50px;
   background-color: #DCEFF5 ;
   border-radius: 45px;
+  
 }
 .btn-cancel{
   width: 100%;

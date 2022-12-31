@@ -1,0 +1,18 @@
+<h1 mat-dialog-title *ngIf="!isProcessing">Enter Price</h1>
+<h1 mat-dialog-title *ngIf="isProcessing">Awaiting User confirmation</h1>
+<div mat-dialog-content>
+    <div class="processing" *ngIf="isProcessing">
+        <div class="spinner-border text-warning" role="status">
+            <span class="visually-hidden" *ngIf="!isComplete">Loading...</span>
+        </div>
+        <h1 *ngIf="isComplete">Done</h1>
+    </div>
+
+    <div class="price-wrapper" *ngIf="!isProcessing">
+        <input type="text">
+    </div>
+</div>
+<div class="actions-wrapper" *ngIf="!isProcessing">
+    <button mat-button mat-dialog-close >cancel</button>
+    <button mat-button (click)="process()">Start Trip</button>
+</div>

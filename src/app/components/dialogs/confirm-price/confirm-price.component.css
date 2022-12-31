@@ -1,0 +1,27 @@
+.price-wrapper input{
+    outline: none;
+    background: #fff;
+    border: 1px solid rgba(100, 100, 111, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.actions-wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions-wrapper button{
+    color: #fff;
+    background: #F59523;
+    border: none;
+    padding: 5px 10px;
+}
+.processing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

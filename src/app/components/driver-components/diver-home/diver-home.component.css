@@ -185,3 +185,20 @@ small{
 .from,.to{
   color: #F59523;
 }
+
+.accept-ride{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.accept-btn{
+  background-color: #F59523;
+  color: white;
+  font-family: 'Sen-Bold', sans-serif;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  width: 100px;
+  text-transform: uppercase;
+}

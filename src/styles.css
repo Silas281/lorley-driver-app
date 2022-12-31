@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+
 @font-face {
   font-family: Sen-Bold;
   src: url(assets/fonts/Sen-Bold.otf) format("opentype");
@@ -35,9 +38,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   justify-content: space-between;
   align-items: center;
   background-color: #F5F6FA;
-  padding: 1rem 1rem;
-  height: 50px;
-  /* border: 1px solid red; */
+  padding: 0.5rem 1rem;
+  height: 40px;
+  /*border: 1px solid red; */
 }
 
 .nav-item{

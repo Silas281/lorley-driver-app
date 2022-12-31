@@ -1,8 +1,15 @@
 .googleMap {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
   }
+
+  .googleMap2 {
+    width: 100%;
+    height: 95vh;
+  }
+
   
+
   .center-btn {
     position: absolute;
     bottom: 140px;

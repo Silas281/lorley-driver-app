@@ -21,6 +21,9 @@ import { LoginComponent } from './components/driver-components/login/login.compo
 import { AccountComponent } from './components/driver-components/account/account.component';
 import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
 import { DriverMainComponent } from './components/driver-components/driver-main/driver-main.component';
+import { EarningComponent } from './components/driver-components/earning/earning.component';
+import { CompleteSignUpComponent } from './complete-sign-up/complete-sign-up.component';
+import { ConfirmPriceComponent } from './components/dialogs/confirm-price/confirm-price.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -35,7 +38,10 @@ import { DriverMainComponent } from './components/driver-components/driver-main/
     LoginComponent,
     AccountComponent,
     BottomNavComponent,
-    DriverMainComponent
+    DriverMainComponent,
+    EarningComponent,
+    CompleteSignUpComponent,
+    ConfirmPriceComponent
   ],
   imports: [
     BrowserModule,
