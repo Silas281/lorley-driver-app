@@ -1,42 +1,32 @@
-<section class="form-section">
-    <div class="form-wrapper">
-       
-        <form  class="sign-up-form" [formGroup]="signupForm" (ngSubmit)="createAccount(signupForm.value)">
-            <div class="welcome-banner">
-                    <h1>Finish Setting up Your Account</h1>
-               </div>
-            <div class="form-group">
-                <label for="address">Resident Address</label> <br>
-                <input type="address" id="address" placeholder="residential address">
-            </div>
-            <div class="form-group">
-                <label for="license">Driver License</label> <br>
-                <input type="file" id="license" >
-            </div>
-            <div class="form-group">
-                <label for="car-number">Car Number</label> <br>
-                <input type="text" id="car-number" placeholder="vehicle number">
-            </div>
-            <div class="form-group">
-                <label for="road-w">Road Wordy</label> <br>
-                <input type="file" id="road-w" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="insurance">Insurance</label> <br>
-                <input type="file" id="insurance" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="id">National ID</label> <br>
-                <input type="file" id="id" placeholder="">
-            </div>
-
-            <div class="form-group">
-               
-                <input [disabled]="!signupForm.valid" type="submit" id="submit" value="submit">
-            </div>
-        </form>
-
+<section>
+    <div class="account-main-wrapper">
+        <div class="profile-image my-3">
+                <div class="image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#F59523" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                      </svg>
+                </div>             
+        </div>
+        <div class="rating my-3">
+           
+                <h2>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                </h2>
+          
+        </div>
+        
+        <div class="contact">
+           
+            <p class="name-text">Silas Sangmin</p>
+            <p class="phone"> <i class="bi bi-telephone-fill"></i> +233542893998</p>
+            <p class="email"><i class="bi bi-envelope"></i> sangminsilas@gmail.com</p>
+            <p class="vehicle-no"><i class="bi bi-taxi-front-fill"></i> X-3929-23</p>
+        </div>
     </div>
-
 </section>
+
 <app-bottom-nav></app-bottom-nav>

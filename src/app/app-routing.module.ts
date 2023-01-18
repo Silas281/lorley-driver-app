@@ -12,7 +12,7 @@ import { DriverMainComponent } from './components/driver-components/driver-main/
 import { EarningComponent } from './components/driver-components/earning/earning.component';
 
 const routes: Routes = [
-  { path: '', component: DriverMainComponent },
+  { path: '', component: DiverHomeComponent },
   { path: 'choose-destination', component: ChooseDestinationComponent },
   { path: 'awaiting', component: AwaitingComponent },
   {path: 'driver-home', component: DiverHomeComponent},

@@ -1,1 +1,41 @@
-<p>complete-sign-up works!</p>
+<section class="form-section">
+    <div class="form-wrapper">
+       
+        <form  class="sign-up-form" [formGroup]="signupForm" (ngSubmit)="createAccount(signupForm.value)">
+            <div class="welcome-banner">
+                    <h1>Finish Setting up Your Account</h1>
+               </div>
+            <div class="form-group">
+                <label for="address">Resident Address</label> <br>
+                <input type="address" id="address" placeholder="residential address">
+            </div>
+            <div class="form-group">
+                <label for="license">Driver License</label> <br>
+                <input type="file" id="license" >
+            </div>
+            <div class="form-group">
+                <label for="car-number">Car Number</label> <br>
+                <input type="text" id="car-number" placeholder="vehicle number">
+            </div>
+            <div class="form-group">
+                <label for="road-w">Road Wordy</label> <br>
+                <input type="file" id="road-w" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="insurance">Insurance</label> <br>
+                <input type="file" id="insurance" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="id">National ID</label> <br>
+                <input type="file" id="id" placeholder="">
+            </div>
+
+            <div class="form-group">
+               
+                <input [disabled]="!signupForm.valid" type="submit" id="submit" value="submit">
+            </div>
+        </form>
+
+    </div>
+
+</section>

@@ -1,0 +1,92 @@
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #eff7ff;
+   
+}
+.sign-up-form{
+    /* background-color: aqua; */
+    margin: auto;
+    width: 90%;
+    padding: 10px 10px;
+
+}
+
+.welcome-banner{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome-banner .form-section h1, .form-section p{
+    text-align: center;
+}
+
+.form-header-title{
+    display: flex;
+    justify-content: space-between;
+}
+.form-header-title .span-signup,.span-login{
+    padding: 0 10px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.form-header-title .span-login{
+    background-color: #F59523;
+    border-radius: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    text-align: start;
+    
+}
+.form-header-title .span-login{
+    /*background-color: antiquewhite;*/
+    text-align: center;
+   
+    
+}
+
+
+.form-group{
+    margin: 25px 0;
+    width: 100%;
+}
+
+input{
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid #ffffff !important;
+    background: #ffffff;
+    padding-left: 5px;
+    
+}
+input[type=submit]{
+    background: #F59523;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+input:focus{
+    border: 1px solid #F59523;
+   
+}
+
+.forgot-password{
+    display: flex;
+    justify-content: flex-end;
+    color: #F59523;
+}
+

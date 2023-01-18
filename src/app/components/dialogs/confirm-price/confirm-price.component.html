@@ -2,8 +2,8 @@
 <h1 mat-dialog-title *ngIf="isProcessing">Awaiting User confirmation</h1>
 <div mat-dialog-content>
     <div class="processing" *ngIf="isProcessing">
-        <div class="spinner-border text-warning" role="status">
-            <span class="visually-hidden" *ngIf="!isComplete">Loading...</span>
+        <div class="spinner-border text-warning" role="status" *ngIf="!isComplete">
+            <span class="visually-hidden" >Loading...</span>
         </div>
         <h1 *ngIf="isComplete">Done</h1>
     </div>
