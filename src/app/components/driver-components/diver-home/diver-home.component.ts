@@ -3,6 +3,8 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ConfirmPriceComponent } from '../../dialogs/confirm-price/confirm-price.component';
 
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-diver-home',
@@ -16,9 +18,12 @@ export class DiverHomeComponent implements OnInit {
   constructor(
     private dialog: MatDialog,
     private router: Router,
+    private authService: AuthService,
+    private userService: UserService
     ) { }
 
   ngOnInit(): void {
+    //this.userService.getUsers().subscribe((users) => {console.log(users)})
   }
 
   isConfirm(){

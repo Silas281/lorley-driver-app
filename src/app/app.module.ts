@@ -9,9 +9,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { ChooseDestinationComponent } from './components/choose-destination/choose-destination.component';
+
 import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
-import { AwaitingComponent } from './components/awaiting/awaiting.component';
+
 import { DiverHomeComponent } from './components/driver-components/diver-home/diver-home.component';
 import { OngoingRideComponent } from './components/ongoing-ride/ongoing-ride.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,17 +20,19 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { LoginComponent } from './components/driver-components/login/login.component';
 import { AccountComponent } from './components/driver-components/account/account.component';
 import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
-import { DriverMainComponent } from './components/driver-components/driver-main/driver-main.component';
 import { EarningComponent } from './components/driver-components/earning/earning.component';
 import { CompleteSignUpComponent } from './complete-sign-up/complete-sign-up.component';
 import { ConfirmPriceComponent } from './components/dialogs/confirm-price/confirm-price.component';
+import { AuthService } from './services/auth.service';
+import { environment } from 'src/environments/environment';
+import {AngularFireModule} from '@angular/fire/compat';
+
+
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
-    ChooseDestinationComponent,
-    AwaitingComponent,
     DiverHomeComponent,
     OngoingRideComponent,
     ConfirmDialogComponent,
@@ -38,7 +40,6 @@ import { ConfirmPriceComponent } from './components/dialogs/confirm-price/confir
     LoginComponent,
     AccountComponent,
     BottomNavComponent,
-    DriverMainComponent,
     EarningComponent,
     CompleteSignUpComponent,
     ConfirmPriceComponent
@@ -46,14 +47,17 @@ import { ConfirmPriceComponent } from './components/dialogs/confirm-price/confir
   imports: [
     BrowserModule,
     AppRoutingModule,
+   
     HttpClientModule,
     GooglePlaceModule,
     BrowserAnimationsModule,
     MatSnackBarModule,
     MatDialogModule,
     ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule,
   ],
-  providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue:{hasBackdrop: false}}],
+  providers: [{provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue:{hasBackdrop: false}}, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
